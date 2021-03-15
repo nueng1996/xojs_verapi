@@ -1,0 +1,9 @@
+kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h mysql -ppassword
+
+CREATE DATABASE xo; 
+
+use xo;
+
+CREATE TABLE macth (id VARCHAR(20), playerone VARCHAR(200), playertwo VARCHAR(200), sizeTable VARCHAR(200));
+
+CREATE TABLE step (id VARCHAR(20), cellid VARCHAR(200), player VARCHAR(200), macthid VARCHAR(200));

@@ -1,0 +1,21 @@
+apiVersion: skaffold/v2alpha3
+kind: Config
+deploy:
+  kubectl:
+    manifests:
+      - ./k8s/*
+ 
+
+build:
+  local:
+    push: false
+  artifacts:
+    
+    - image: nueng1996/api
+      context: api
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'src/**/*.js'
+            dest: .

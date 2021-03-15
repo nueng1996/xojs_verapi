@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jscss/index.css">
+</head>
+<body>
+    Play 1 = "X" 
+    Play 2 = "O"
+    <br>
+
+    Player1 Name : <input type="text" id="player1name" required >
+    Player2 Name : <input type="text" id="player2name" required >
+    <br>
+    size (ex 3 mean  3*3 ): <input type="number" id="sizeTable" required> <button onclick="play()" id="playbtn">Play</button>
+
+    <select id="hsofp"></select>
+    <button onclick="replayw()" id="replaybtn">rePlay</button>
+    <div class="gameover">
+        <div class="text"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="jscss/index.js"></script>
+    
+</body>
+</html>
